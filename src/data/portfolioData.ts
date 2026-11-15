@@ -1,15 +1,15 @@
 import heroCommercialTower from '../assets/images/hero_commercial_tower_1794735722170.jpg';
-import projectDhaComplex from '../assets/images/project_dha_complex_1794735722644.jpg';
-import projectArenaWalk from '../assets/images/project_arena_walk_1794735722576.jpg';
+import projectDhaComplex from '../assets/images/project_dha_complex_1794735722644.png';
+import projectArenaWalk from '../assets/images/project_arena_walk_1794735722576.png';
 import projectArmyMuseum from '../assets/images/project_army_museum_1794735723927.jpg';
-import projectLuxuryResidence from '../assets/images/project_luxury_residence_1794735723691.jpg';
+import projectLuxuryResidence from '../assets/images/project_luxury_residence_1794735723691.png';
 import type { ProjectItem } from '../types/samec';
 
 export const COMPANY_ASSETS = {
   logoUrl: '/assets/aistudio/WhatsApp_Image_2026-11-13_at_4.17.02_PM_a7126e38.jpeg',
   companyProfilePdf: '/assets/aistudio/SAMEC_Company_Profile_fd23ece0.pdf',
   ownerCvPdf: '/assets/aistudio/ENGR._MUHAMMAD_SAQIB_RAFIQ-26__1___1___1___1__bc278bd7.pdf',
-  heroImage: heroCommercialTower,
+  heroImage: projectArmyMuseum,
 };
 
 export const COMPLETED_PROJECTS: ProjectItem[] = [

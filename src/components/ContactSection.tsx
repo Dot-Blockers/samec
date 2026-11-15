@@ -145,7 +145,7 @@ export function ContactSection({ prefilledProjectContext }: ContactSectionProps)
             </div>
 
             {/* Interactive Indicative Cost Planner */}
-            <div className="bg-white border border-slate-200 rounded-xl p-6 space-y-4">
+            {/* <div className="bg-white border border-slate-200 rounded-xl p-6 space-y-4">
               <div className="flex items-center justify-between gap-2">
                 <h3 className="font-display text-base font-semibold text-[#0F1E2E]">
                   Indicative Construction Scope Estimator
@@ -205,7 +205,7 @@ export function ContactSection({ prefilledProjectContext }: ContactSectionProps)
                   itemized BOQ.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             {/* Direct Contact Details */}
             <div className="bg-white border border-slate-200 rounded-xl p-6 space-y-4 text-sm">
@@ -219,7 +219,7 @@ export function ContactSection({ prefilledProjectContext }: ContactSectionProps)
                     </a>{' '}
                     ·{' '}
                     <a href="tel:+923249815159" className="hover:underline">
-                      +92 324 9815159
+                      
                     </a>
                   </p>
                 </div>

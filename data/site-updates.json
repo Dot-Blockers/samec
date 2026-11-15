@@ -1,0 +1,58 @@
+[
+  {
+    "id": "upd-dha6-01",
+    "projectSite": "DHA Phase 6 Commercial Plaza",
+    "location": "Sector K, DHA Phase 6, Lahore",
+    "phase": "3rd Floor Slab & Shear Wall Pour",
+    "category": "Structural & Concrete",
+    "engineerName": "Engr. Muhammad Saqib Rafiq",
+    "engineerRole": "Principal Engineer",
+    "summary": "Completed 4,200 PSI ready-mix concrete pour for 3rd-floor post-tensioned slab; slump test verified at 75mm and 6 test cylinders cast for 7/28-day compression lab testing.",
+    "metricsNote": "Slump: 75mm · Cylinders: 6 Cast · Crew: 34",
+    "progressPercent": 64,
+    "qaVerified": true,
+    "timestamp": "2026-11-15T09:38:41.307Z"
+  },
+  {
+    "id": "upd-gulberg-02",
+    "projectSite": "Gulberg-III Turnkey Residence",
+    "location": "Main Boulevard Annex, Gulberg-III, Lahore",
+    "phase": "MEP Rough-In & Travertine Cladding",
+    "category": "MEP & Finishes",
+    "engineerName": "Engr. Bilal Tariq",
+    "engineerRole": "Resident Site Engineer",
+    "summary": "Completed pressure testing on concealed PEX/PPRC plumbing risers at 10 bar for 24 hours with zero pressure drop; exterior mechanical travertine anchor installation underway.",
+    "metricsNote": "Hydro-test: 10 Bar Passed · Cladding: 48%",
+    "progressPercent": 78,
+    "qaVerified": true,
+    "timestamp": "2026-11-15T07:15:41.308Z"
+  },
+  {
+    "id": "upd-johar-03",
+    "projectSite": "Johar Town Corporate Annex",
+    "location": "Block H-2, Johar Town, Lahore",
+    "phase": "Sub-Base & Basement Raft Steel Inspection",
+    "category": "QA/QC & Material Test",
+    "engineerName": "Engr. Adeel Mahmood",
+    "engineerRole": "QA/QC & HSE Inspector",
+    "summary": "Verified Grade-60 deformed rebar spacing, lap lengths, and 75mm cover blocks across Grid A-F prior to raft foundation pour per ACI-318 specifications.",
+    "metricsNote": "Rebar: Grade-60 ASTM A615 · Cover: 75mm",
+    "progressPercent": 32,
+    "qaVerified": true,
+    "timestamp": "2026-11-15T03:50:41.308Z"
+  },
+  {
+    "id": "upd-ruda-04",
+    "projectSite": "Lahore North Industrial & Warehouse Shed",
+    "location": "Ravi Urban Zone, Lahore",
+    "phase": "Weekly Zero-Harm HSE & Scaffolding Audit",
+    "category": "HSE & Safety Audit",
+    "engineerName": "Engr. Kamran Siddiqui",
+    "engineerRole": "Project Manager",
+    "summary": "Conducted toolbox talk and full harness/scaffolding inspection for 18m steel portal frame erection. Zero LTI incidents recorded across 42,000 safe man-hours.",
+    "metricsNote": "Safe Man-Hours: 42,000 · LTI: 0",
+    "progressPercent": 51,
+    "qaVerified": true,
+    "timestamp": "2026-11-14T22:20:41.308Z"
+  }
+]

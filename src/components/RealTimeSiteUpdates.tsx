@@ -217,7 +217,7 @@ export function RealTimeSiteUpdates() {
     <section
       id="site-updates"
       aria-labelledby="site-updates-heading"
-      className="py-16 sm:py-20 bg-[#0F1E2E] text-white border-b border-slate-800"
+      className="py-16 sm:py-20 bg-white text-white border-b border-slate-200"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Header & Real-Time Connection Telemetry */}
@@ -239,10 +239,10 @@ export function RealTimeSiteUpdates() {
                     ? 'Connecting to Site Telemetry...'
                     : 'Reconnecting Live Feed...'}
               </span>
-              <span className="text-slate-500" aria-hidden="true">
+              <span className="text-black" aria-hidden="true">
                 ·
               </span>
-              <span className="text-slate-300 tabular-nums">
+              <span className="text-black tabular-nums">
                 {activeClients} {activeClients === 1 ? 'Active Viewer' : 'Active Viewers'}
               </span>
             </div>

@@ -3,7 +3,7 @@ import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { ServicesSection } from './components/ServicesSection';
 import { ProjectGallerySection } from './components/ProjectGallerySection';
-import { RealTimeSiteUpdates } from './components/RealTimeSiteUpdates';
+// import { RealTimeSiteUpdates } from './components/RealTimeSiteUpdates';
 import { LeadershipSection } from './components/LeadershipSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
@@ -30,7 +30,7 @@ export default function App() {
         <HeroSection />
         <ServicesSection />
         <ProjectGallerySection onRequestSimilarQuote={handleRequestSimilarQuote} />
-        <RealTimeSiteUpdates />
+        {/* <RealTimeSiteUpdates /> */}
         <LeadershipSection />
         <ContactSection prefilledProjectContext={prefilledProjectContext} />
       </main>

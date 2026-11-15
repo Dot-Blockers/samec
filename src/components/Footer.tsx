@@ -95,11 +95,11 @@ export function Footer() {
                   Services & Structure
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#site-updates" className="hover:text-[#0F1E2E]">
                   Real-Time Site Updates
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a href="#leadership" className="hover:text-[#0F1E2E]">
                   Engr. Muhammad Saqib Rafiq

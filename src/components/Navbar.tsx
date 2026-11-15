@@ -5,7 +5,7 @@ import { COMPANY_ASSETS } from '../data/portfolioData';
 const NAV_LINKS = [
   { label: 'Projects', href: '#projects' },
   { label: 'Services', href: '#services' },
-  { label: 'Site Updates', href: '#site-updates' },
+  // { label: 'Site Updates', href: '#site-updates' },
   { label: 'Leadership', href: '#leadership' },
   { label: 'Contact', href: '#contact' },
 ];
