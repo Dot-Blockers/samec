@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { COMPANY_ASSETS } from '../data/portfolioData';
+import { buildWhatsAppUrl, SAMEC_WHATSAPP_DISPLAY } from '../utils/whatsapp';
 
 const FAQ_ITEMS = [
   {
@@ -119,7 +120,18 @@ export function Footer() {
               Faisalabad · Sialkot · Peshawar · Muzaffarabad AJ&K.
             </p>
             <p className="text-xs font-mono text-slate-500 pt-1">
-              info@samec.pk · +92 347 4623101
+              <a href="mailto:info@samec.pk" className="hover:text-[#0F1E2E]">
+                info@samec.pk
+              </a>{' '}
+              ·{' '}
+              <a
+                href={buildWhatsAppUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#0D8A5A] hover:underline font-medium"
+              >
+                WhatsApp {SAMEC_WHATSAPP_DISPLAY}
+              </a>
             </p>
           </div>
         </div>

@@ -1,5 +1,6 @@
 import { FormEvent, useEffect, useMemo, useState } from 'react';
-import { CheckCircle2, Mail, MapPin, Phone } from 'lucide-react';
+import { CheckCircle2, Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
+import { buildWhatsAppUrl, SAMEC_WHATSAPP_DISPLAY } from '../utils/whatsapp';
 
 interface ContactSectionProps {
   prefilledProjectContext?: { title: string; location: string } | null;
@@ -250,6 +251,20 @@ export function ContactSection({ prefilledProjectContext }: ContactSectionProps)
                   </p>
                 </div>
               </div>
+
+              <div className="pt-3 border-t border-slate-100">
+                <a
+                  href={buildWhatsAppUrl(
+                    `Hello Engr. Muhammad Saqib Rafiq, I am exploring a ${indicativeRange.label} project (~${coveredAreaSqFt.toLocaleString()} sq. ft., est. PKR ${indicativeRange.minMillion}M–${indicativeRange.maxMillion}M) and would like to consult with SAMEC.`
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="min-h-[42px] w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-semibold text-white bg-[#0D8A5A] hover:bg-[#0A6E47] rounded-md transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4 shrink-0" />
+                  Chat on WhatsApp ({SAMEC_WHATSAPP_DISPLAY})
+                </a>
+              </div>
             </div>
           </div>
 
@@ -274,11 +289,22 @@ export function ContactSection({ prefilledProjectContext }: ContactSectionProps)
                       {confirmation.referenceCode}
                     </p>
                   </div>
-                  <div className="pt-4">
+                  <div className="pt-4 flex flex-wrap items-center justify-center gap-3">
+                    <a
+                      href={buildWhatsAppUrl(
+                        `Hello Engr. Muhammad Saqib Rafiq, I just submitted an inquiry on SAMEC (Ref: ${confirmation.referenceCode}) under the name ${confirmation.fullName}.`
+                      )}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="min-h-[42px] inline-flex items-center justify-center gap-2 px-5 py-2 text-sm font-semibold text-white bg-[#0D8A5A] hover:bg-[#0A6E47] rounded-md transition-colors"
+                    >
+                      <MessageCircle className="w-4 h-4 shrink-0" />
+                      Send Reference on WhatsApp
+                    </a>
                     <button
                       type="button"
                       onClick={() => setConfirmation(null)}
-                      className="min-h-[42px] px-5 py-2 text-sm font-semibold text-white bg-[#0D8A5A] hover:bg-[#0A6E47] rounded-md transition-colors"
+                      className="min-h-[42px] px-5 py-2 text-sm font-semibold text-[#0F1E2E] bg-slate-100 hover:bg-slate-200 rounded-md transition-colors"
                     >
                       Submit Another Inquiry
                     </button>

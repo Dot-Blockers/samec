@@ -7,6 +7,7 @@ import { RealTimeSiteUpdates } from './components/RealTimeSiteUpdates';
 import { LeadershipSection } from './components/LeadershipSection';
 import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
+import { WhatsAppFloat } from './components/WhatsAppFloat';
 
 export default function App() {
   const [prefilledProjectContext, setPrefilledProjectContext] = useState<{
@@ -34,6 +35,7 @@ export default function App() {
         <ContactSection prefilledProjectContext={prefilledProjectContext} />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }

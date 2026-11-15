@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { ArrowUpRight, Building2, X } from 'lucide-react';
+import { ArrowUpRight, Building2, MessageCircle, X } from 'lucide-react';
 import { COMPLETED_PROJECTS } from '../data/portfolioData';
 import type { ProjectCategory, ProjectItem } from '../types/samec';
+import { buildWhatsAppUrl } from '../utils/whatsapp';
 
 const CATEGORY_TABS: { id: ProjectCategory; label: string }[] = [
   { id: 'all', label: 'All Projects' },
@@ -267,6 +268,17 @@ export function ProjectGallerySection({ onRequestSimilarQuote }: ProjectGalleryS
                 >
                   Close
                 </button>
+                <a
+                  href={buildWhatsAppUrl(
+                    `Hello Engr. Muhammad Saqib Rafiq, I am interested in a project similar to "${selectedProject.title}" (${selectedProject.location}).`
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="min-h-[40px] inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-[#0D8A5A] bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 rounded-md transition-colors"
+                >
+                  <MessageCircle className="w-4 h-4 shrink-0" />
+                  WhatsApp Inquiry
+                </a>
                 <button
                   type="button"
                   onClick={() => {
